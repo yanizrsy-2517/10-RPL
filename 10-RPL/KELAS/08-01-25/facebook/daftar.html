@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook — Daftar</title>
+</head>
+<body>
+    <main>
+        <h1>Buat Akun Facebook</h1>
+        <p>Isi formulir di bawah untuk membuat akun baru.</p>
+
+        <form action="#" method="post">
+            <label>
+                Nama depan
+                <input type="text" name="first_name" placeholder="Nama depan" required>
+            </label>
+            <br>
+            <label>
+                Nama belakang
+                <input type="text" name="last_name" placeholder="Nama belakang" required>
+            </label>
+            <br>
+            <label>
+                Mobile number or email
+                <input type="text" name="contact" placeholder="Nomor ponsel atau email" required>
+            </label>
+            <br>
+            <label>
+                Kata sandi baru
+                <input type="password" name="new_password" placeholder="Kata sandi baru" required>
+            </label>
+            <br>
+            <label>
+                Tanggal lahir
+                <input type="date" name="birthdate" required>
+            </label>
+            <br>
+            <fieldset>
+                <legend>Jenis kelamin</legend>
+                <label><input type="radio" name="gender" value="female" required> Perempuan</label>
+                <label><input type="radio" name="gender" value="male"> Laki-laki</label>
+                <label><input type="radio" name="gender" value="other"> Lainnya</label>
+            </fieldset>
+            <br>
+            <button type="submit">Daftar</button>
+        </form>
+
+        <p>Sudah punya akun? <a href="masuk.html">Masuk</a></p>
+    </main>
+</body>
+</html>

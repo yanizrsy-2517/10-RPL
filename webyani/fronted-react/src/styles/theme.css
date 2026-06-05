@@ -1,0 +1,101 @@
+/* Japanese Ocean Theme */
+
+:root{
+  --deep-ocean-blue:#0B3D6B;
+  --sakura-pink:#F4A7B9;
+  --sea-foam:#A8D5E2;
+  --ivory:#FDF6EC;
+
+  --bg0: #061f33;
+  --bg1: var(--deep-ocean-blue);
+  --bg2: rgba(168, 213, 226, 0.18);
+
+  --text: rgba(253, 246, 236, 0.92);
+  --muted: rgba(253, 246, 236, 0.72);
+  --card: rgba(253, 246, 236, 0.06);
+  --card-2: rgba(253, 246, 236, 0.10);
+  --stroke: rgba(168, 213, 226, 0.22);
+
+  --shadow-blue: 0 18px 60px rgba(11, 61, 107, 0.42);
+  --shadow-glow: 0 0 0 1px rgba(168, 213, 226, 0.22), 0 18px 60px rgba(11,61,107,0.35);
+
+  --radius-xl: 22px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+
+  --font-body: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-jp: "Noto Serif JP", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin:0;
+  font-family: var(--font-body);
+  background: radial-gradient(900px 600px at 50% -100px, rgba(244,167,185,0.18), transparent 55%),
+              radial-gradient(700px 520px at 100% 0%, rgba(168,213,226,0.22), transparent 50%),
+              linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 35%, #07243a 100%);
+  color: var(--text);
+}
+
+a{ color: inherit; }
+
+.container{
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section{
+  padding: 84px 0;
+}
+
+@media (max-width: 768px){
+  .section{ padding: 66px 0; }
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(253,246,236,0.08), rgba(253,246,236,0.03));
+  border: 1px solid rgba(168,213,226,0.22);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-blue);
+}
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(168,213,226,0.30);
+  background: rgba(168,213,226,0.12);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.btn:hover{
+  transform: translateY(-2px);
+  background: rgba(168,213,226,0.20);
+  box-shadow: var(--shadow-glow);
+}
+
+.btnPrimary{
+  background: linear-gradient(135deg, rgba(244,167,185,0.35), rgba(168,213,226,0.18));
+  border-color: rgba(244,167,185,0.35);
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(244,167,185,0.30);
+  background: rgba(244,167,185,0.10);
+  color: rgba(244,167,185,0.98);
+  font-size: 14px;
+}
+
